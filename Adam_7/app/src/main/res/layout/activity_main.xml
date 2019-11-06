@@ -6,14 +6,136 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
-
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
-
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffbf00">
+        <TextView
+                android:text="Lab 7"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="#ffbf00"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="209dp" android:id="@+id/textView" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent"/>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" tools:layout_editor_absoluteY="35dp"
+                tools:layout_editor_absoluteX="8dp">
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:background="#ff0000">
+                    <TextView
+                            android:text="Name"
+                            android:textColor="#000000"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/textView2"/>
+                    <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPersonName"
+                            android:hint="Name"
+                            android:maxLength="8"
+                            android:ems="10"
+                            android:id="@+id/nameEditText"/>
+                    <TextView
+                            android:text="Dept"
+                            android:textColor="#000000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView3"/>
+                    <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:hint="Dept"
+                            android:maxLength="8"
+                            android:ems="10"
+                            android:id="@+id/deptEditText"/>
+                    <TextView
+                            android:text="Year"
+                            android:textColor="#000000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:hint="Year"
+                            android:maxLength="8"
+                            android:ems="10"
+                            android:id="@+id/yearEditText"/>
+                    <Button
+                            android:text="Add"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/addButton1"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:background="#ff00ff">
+                    <TextView
+                            android:text="Name"
+                            android:textColor="#000000"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/textView4"/>
+                    <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPersonName"
+                            android:maxLength="8"
+                            android:hint="Name"
+                            android:ems="10"
+                            android:id="@+id/nameEditText2"/>
+                    <TextView
+                        android:text="Dept"
+                        android:textColor="#000000"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/textView5"/>
+                    <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:maxLength="8"
+                            android:hint="Dept"
+                            android:ems="10"
+                            android:id="@+id/deptEditText2"/>
+                    <TextView
+                            android:text="Year"
+                            android:textColor="#000000"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/textView6"/>
+                    <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:hint="Year"
+                            android:maxLength="8"
+                            android:ems="10"
+                            android:id="@+id/yearEditText2"/>
+                    <Button
+                            android:text="Add"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/addButton2"/>
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                    android:text="View"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/viewBtn" />
+        </LinearLayout>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
