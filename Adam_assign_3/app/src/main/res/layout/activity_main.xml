@@ -29,12 +29,12 @@
                     android:text="Add Team"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/addTeamBtn" android:layout_weight="1"/>
+                    android:id="@+id/addTeamBtn" />
             <Button
                     android:text="Exit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/exitBtn" android:layout_weight="1"/>
+                    android:id="@+id/exitBtn"/>
         </LinearLayout>
         <ListView
                 android:layout_width="match_parent"

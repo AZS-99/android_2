@@ -5,15 +5,21 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.os.Parcel;
+import android.os.Parcelable;
 
 import java.util.ArrayList;
 import java.util.List;
 
+
+//Try Parcelable
 public class Database extends SQLiteOpenHelper {
+
     String database;
     List<String> tables;
     public Database(Context context, String name) {
         super(context, name, null, 1);
+
         database = name;
         tables = new ArrayList<>();
         tables.add("TEAMS");
@@ -49,4 +55,6 @@ public class Database extends SQLiteOpenHelper {
         SQLiteDatabase database = getWritableDatabase();
         return database.rawQuery("SELECT * FROM TEAMS", null);
     }
+
+
 }

@@ -5,17 +5,16 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".Main2Activity">
+        tools:context=".Main3Activity">
 
     <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:layout_editor_absoluteY="8dp" tools:layout_editor_absoluteX="8dp">
+            android:layout_height="match_parent">
         <LinearLayout
                 android:orientation="vertical"
+                android:background="#ff0000"
                 android:layout_width="match_parent"
-                android:background="#ffff00"
                 android:layout_height="0dp"
                 android:layout_weight="0.5">
             <LinearLayout
@@ -30,9 +29,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:inputType="textPersonName"
-                        android:hint="City"
                         android:ems="10"
-                        android:maxLength="8"
                         android:id="@+id/cityEditText"/>
             </LinearLayout>
             <LinearLayout
@@ -47,8 +44,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:inputType="textPersonName"
-                        android:hint="Name"
-                        android:maxLength="8"
                         android:ems="10"
                         android:id="@+id/nameEditText"/>
             </LinearLayout>
@@ -64,8 +59,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:inputType="textPersonName"
-                        android:maxLength="8"
-                        android:hint="sport"
                         android:ems="10"
                         android:id="@+id/sportEditText"/>
             </LinearLayout>
@@ -74,51 +67,52 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                 <TextView
-                        android:text="MVP"
+                        android:text="mvp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                 <EditText
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:inputType="textPersonName"
-                        android:hint="MVP"
-                        android:maxLength="8"
                         android:ems="10"
                         android:id="@+id/mvpEditText"/>
             </LinearLayout>
-
             <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                 <TextView
-                        android:text="Stadium"
+                        android:text="stadium"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                 <EditText
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:inputType="textPersonName"
-                        android:hint="Stadium"
-                        android:maxLength="8"
                         android:ems="10"
                         android:id="@+id/stadiumEditText"/>
             </LinearLayout>
+
+
         </LinearLayout>
         <LinearLayout
                 android:orientation="horizontal"
-                android:layout_width="match_parent"
                 android:background="#ff00ff"
+                android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="0.5">
             <Button
-                    android:text="SUBMIT"
+                    android:text="Update"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" android:id="@+id/submitBtn"/>
+                    android:layout_height="wrap_content" android:id="@+id/updateBtn"/>
             <Button
-                    android:text="EXIT"
+                    android:text="Delete"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" android:id="@+id/exitBtn" />
+                    android:layout_height="wrap_content" android:id="@+id/deleteBtn"/>
+            <Button
+                    android:text="Exit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/exitBtn"/>
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
