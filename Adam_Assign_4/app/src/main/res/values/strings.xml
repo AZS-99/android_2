@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Adam_Assign_4</string>
+    <string name="assignment_4">Assignment 4</string>
+    <string name="image_not_found">Image Not Found</string>
+    <string-array name="sports">
+        <item>Baseball</item>
+        <item>Football</item>
+        <item>Basketball</item>
+        <item>Golf</item>
+        <item>Hockey</item>
+    </string-array>
+</resources>

@@ -1,10 +1,143 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+
         tools:context=".Main3Activity">
 
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:orientation="vertical"
+                android:background="#ff0000"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5">
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:text="City"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/cityEditText"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:text="Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/nameEditText"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:text="Sport"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                <Spinner
+                        android:id="@+id/sportSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/btn_dropdown"
+                        android:spinnerMode="dropdown"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:text="mvp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/mvpEditText"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:text="stadium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/stadiumEditText"/>
+            </LinearLayout>
+
+            <RelativeLayout android:layout_height="wrap_content" android:layout_width="wrap_content"> // Only works inside a RelativeLayout
+                <ImageView
+                        android:id="@+id/imgView"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="#ffffff"
+                />
+                <TextView
+                        android:id="@+id/imgViewText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/imgView"
+                        android:layout_alignTop="@+id/imgView"
+                        android:layout_alignRight="@+id/imgView"
+                        android:layout_alignBottom="@+id/imgView"
+                        android:layout_margin="1dp"
+                        android:gravity="center"
+                        android:text="IMAGE NOT FOUND"
+                        android:textColor="#000000"
+                        android:textSize="20sp"/>
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:background="#ff00ff"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5">
+            <Button
+                    android:text="Update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/updateBtn"/>
+            <Button
+                    android:text="Delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/deleteBtn"/>
+            <Button
+                    android:text="Exit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/exitBtn"/>
+        </LinearLayout>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
