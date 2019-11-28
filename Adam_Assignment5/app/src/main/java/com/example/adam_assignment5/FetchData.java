@@ -1,10 +1,6 @@
 package com.example.adam_assignment5;
 
 import android.os.AsyncTask;
-import android.widget.ArrayAdapter;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -19,7 +15,8 @@ public class FetchData extends AsyncTask <Void, Void, Void>{
     @Override
     protected Void doInBackground(Void ... voids) {
         try {
-            URL url = new URL("https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&minmagnitude=6&limit=22");
+            URL url = new URL("https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&minmagnitude=6&limit=20&endtime=2019-11-30" +
+                    "&starttime=2019-01-01");
             HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
             InputStream inputStream = httpURLConnection.getInputStream();
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));

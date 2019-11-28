@@ -7,9 +7,21 @@
         tools:context=".MainActivity" >
 
 
-    <ListView
+    <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/listView"/>
+            android:layout_height="match_parent">
+        <TextView
+                android:text="Assignment-5"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF00FF"
+                android:id="@+id/textView"/>
+        <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/listView"/>
+    </LinearLayout>
 
 </RelativeLayout>
